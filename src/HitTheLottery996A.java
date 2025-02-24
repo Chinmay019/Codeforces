@@ -7,26 +7,21 @@ public class HitTheLottery996A {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int ans = 0;
-        while(n - 100 >= 0) {
-            n -= 100;
-            ans += 1;
-        }
-        while(n - 20 >= 0) {
-            n -= 20;
-            ans += 1;
-        }
-        while(n - 10 >= 0) {
-            n -= 10;
-            ans += 1;
-        }
-        while(n - 5 >= 0) {
-            n -= 5;
-            ans += 1;
-        }
-        while(n - 1 >= 0) {
-            n -= 1;
-            ans += 1;
-        }
+
+        ans += n / 100;
+        n = n % 100;
+
+        ans += n / 20;
+        n = n % 20;
+
+        ans += n / 10;
+        n = n % 10;
+
+        ans += n / 5;
+        n = n % 5;
+
+        ans += n;
+
         System.out.println(ans);
     }
 }
