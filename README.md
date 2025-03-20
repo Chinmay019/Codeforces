@@ -1,1 +1,1 @@
-Codeforces problems solved.
+Codeforces Solutions in JAVA.
